@@ -83,7 +83,10 @@ const App = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gray-300 bg-[url('./assets/images/bg-mobile-light.jpg')] bg-contain bg-no-repeat">
+        <div
+            className="min-h-screen bg-gray-300 bg-[url('./assets/images/bg-mobile-light.jpg')] bg-contain
+        bg-no-repeat transition-all duration-1000 dark:bg-gray-900 dark:bg-[url('./assets/images/bg-mobile-dark.jpg')]"
+        >
             <HeaderComponent />
             <main className="container mx-auto mt-8 px-4">
                 <TodoCreateComponent createTodo={createTodo} />
@@ -102,7 +105,7 @@ const App = () => {
                 />
             </main>
 
-            <footer className="mt-8 text-center">
+            <footer className="mt-8 text-center dark:text-gray-300">
                 Drag and drop to reorder list
             </footer>
         </div>

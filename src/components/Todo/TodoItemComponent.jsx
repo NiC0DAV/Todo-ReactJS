@@ -18,7 +18,11 @@ const TodoItemComponent = ({ todo, updateTodo, removeTodo }) => {
             >
                 {completed && <CheckIcon />}
             </button>
-            <p className={`grow text-gray-500 ${completed && "line-through"}`}>
+            <p
+                className={`grow text-gray-600 dark:text-gray-300 ${
+                    completed && "line-through"
+                }`}
+            >
                 {title}
             </p>
             <button
