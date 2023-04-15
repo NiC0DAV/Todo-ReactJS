@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'mobile-dark': "url('./src/assets/images/bg-mobile-dark.jpg')",
+        'mobile-light': "url('./src/assets/images/bg-mobile-light.jpg')",
+        'desktop-dark': "url('./src/assets/images/bg-desktop-dark.jpg')",
+        'desktop-light': "url('./src/assets/images/bg-desktop-light.jpg')",
+      }
+    },
     letterSpacing: {
       tightest: '-.075em',
       tighter: '-.05em',
